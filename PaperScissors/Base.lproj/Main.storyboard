@@ -16,8 +16,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOg-Nf-lpB">
+                                <rect key="frame" x="170" y="227" width="75" height="65"/>
+                                <animations/>
+                                <state key="normal" image="Paper"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1J-CP-RgY">
+                                <rect key="frame" x="90" y="335" width="75" height="65"/>
+                                <animations/>
+                                <state key="normal" image="Stone"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJe-9N-9cG">
+                                <rect key="frame" x="246" y="335" width="75" height="65"/>
+                                <animations/>
+                                <state key="normal" image="Scissor"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-l1-akX">
+                                <rect key="frame" x="168" y="524" width="78" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lrS-l1-akX" firstAttribute="top" secondItem="EOg-Nf-lpB" secondAttribute="bottom" constant="232" id="IoA-kf-jwz"/>
+                            <constraint firstItem="nJe-9N-9cG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="76.5" id="Msh-gz-1Cu"/>
+                            <constraint firstItem="EOg-Nf-lpB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-108.5" id="UiI-xY-L4s"/>
+                            <constraint firstItem="s1J-CP-RgY" firstAttribute="centerY" secondItem="nJe-9N-9cG" secondAttribute="centerY" id="XJw-Uy-jX0"/>
+                            <constraint firstItem="EOg-Nf-lpB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="czl-YE-Mvz"/>
+                            <constraint firstItem="nJe-9N-9cG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ovo-rF-udP"/>
+                            <constraint firstItem="lrS-l1-akX" firstAttribute="centerX" secondItem="EOg-Nf-lpB" secondAttribute="centerX" id="xda-6U-v1l"/>
+                            <constraint firstItem="EOg-Nf-lpB" firstAttribute="leading" secondItem="s1J-CP-RgY" secondAttribute="trailing" constant="5" id="xqY-ot-mK4"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
@@ -45,4 +79,9 @@
             <point key="canvasLocation" x="695" y="295"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Paper" width="75" height="65"/>
+        <image name="Scissor" width="75" height="65"/>
+        <image name="Stone" width="75" height="65"/>
+    </resources>
 </document>
