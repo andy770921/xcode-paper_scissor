@@ -33,7 +33,10 @@ class StartPage: UIViewController {
     
     @IBAction func WinLose(){
     
-    
+        var controller: Outcome
+        controller = self.storyboard?.instantiateViewControllerWithIdentifier("secondPage") as! Outcome
+        controller.WLValue = self.rollValue()
+        self.presentViewController(controller, animated: true, completion: nil)
     
     }
     override func didReceiveMemoryWarning() {

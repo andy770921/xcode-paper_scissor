@@ -10,6 +10,7 @@ import UIKit
 
 class Outcome: UIViewController {
     
+    var WLValue: Int?
     @IBOutlet weak var WLText: UILabel!
     
     @IBAction func tryAgain(sender: AnyObject) {
