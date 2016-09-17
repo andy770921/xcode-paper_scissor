@@ -12,6 +12,7 @@
 		A18948791D8D9CB500BF0EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18948771D8D9CB500BF0EE0 /* Main.storyboard */; };
 		A189487B1D8D9CB500BF0EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A189487A1D8D9CB500BF0EE0 /* Assets.xcassets */; };
 		A189487E1D8D9CB500BF0EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A189487C1D8D9CB500BF0EE0 /* LaunchScreen.storyboard */; };
+		A18948861D8D9D1A00BF0EE0 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18948851D8D9D1A00BF0EE0 /* Outcome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A189487A1D8D9CB500BF0EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A189487D1D8D9CB500BF0EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A189487F1D8D9CB500BF0EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A18948851D8D9D1A00BF0EE0 /* Outcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				A18948731D8D9CB500BF0EE0 /* AppDelegate.swift */,
 				A18948751D8D9CB500BF0EE0 /* ViewController.swift */,
+				A18948851D8D9D1A00BF0EE0 /* Outcome.swift */,
 				A18948771D8D9CB500BF0EE0 /* Main.storyboard */,
 				A189487A1D8D9CB500BF0EE0 /* Assets.xcassets */,
 				A189487C1D8D9CB500BF0EE0 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				A18948761D8D9CB500BF0EE0 /* ViewController.swift in Sources */,
 				A18948741D8D9CB500BF0EE0 /* AppDelegate.swift in Sources */,
+				A18948861D8D9D1A00BF0EE0 /* Outcome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
