@@ -46,7 +46,7 @@
                                 <animations/>
                                 <state key="normal" image="Scissor"/>
                                 <connections>
-                                    <segue destination="zXi-6Q-Y7U" kind="presentation" id="BTC-4Q-t1n"/>
+                                    <segue destination="zXi-6Q-Y7U" kind="presentation" identifier="SegueForScissor" id="BTC-4Q-t1n"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -137,6 +137,6 @@
         <image name="Stone" width="75" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DCl-L7-9y4"/>
+        <segue reference="BTC-4Q-t1n"/>
     </inferredMetricsTieBreakers>
 </document>
