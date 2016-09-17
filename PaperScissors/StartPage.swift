@@ -39,6 +39,17 @@ class StartPage: UIViewController {
         self.presentViewController(controller, animated: true, completion: nil)
     
     }
+    @IBAction func WinLoseOfStone(sender: AnyObject) {
+        performSegueWithIdentifier("SegueToOutcome", sender: self)
+
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SegueToOutcome"{
+        let controller = segue.destinationViewController as! Outcome
+        controller.WLValueForStone = self.rollValue()
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

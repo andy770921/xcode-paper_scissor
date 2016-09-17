@@ -11,6 +11,8 @@ import UIKit
 class Outcome: UIViewController {
     
     var WLValue: Int?
+    var WLValueForStone: Int?
+    var WLValueForSc: Int?
     @IBOutlet weak var ImageDisp: UIImageView!
     @IBOutlet weak var WLText: UILabel!
     

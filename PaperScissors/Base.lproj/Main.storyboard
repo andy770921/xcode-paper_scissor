@@ -26,10 +26,13 @@
                                     <action selector="WinLose" destination="BYZ-38-t0r" eventType="touchUpInside" id="528-3x-kbr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJe-9N-9cG">
-                                <rect key="frame" x="246" y="335" width="75" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1J-CP-RgY">
+                                <rect key="frame" x="90" y="335" width="75" height="65"/>
                                 <animations/>
-                                <state key="normal" image="Scissor"/>
+                                <state key="normal" image="Stone"/>
+                                <connections>
+                                    <action selector="WinLoseOfStone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J2H-b7-kIh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-l1-akX">
                                 <rect key="frame" x="168" y="524" width="78" height="21"/>
@@ -38,10 +41,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1J-CP-RgY">
-                                <rect key="frame" x="90" y="335" width="75" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJe-9N-9cG">
+                                <rect key="frame" x="246" y="335" width="75" height="65"/>
                                 <animations/>
-                                <state key="normal" image="Stone"/>
+                                <state key="normal" image="Scissor"/>
+                                <connections>
+                                    <segue destination="zXi-6Q-Y7U" kind="presentation" id="BTC-4Q-t1n"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -62,6 +68,7 @@
                         <outlet property="paperB" destination="EOg-Nf-lpB" id="D9W-6I-BKU"/>
                         <outlet property="scissorB" destination="nJe-9N-9cG" id="JDC-OR-A3L"/>
                         <outlet property="stoneB" destination="s1J-CP-RgY" id="Hrn-9b-3c7"/>
+                        <segue destination="zXi-6Q-Y7U" kind="presentation" identifier="SegueToOutcome" id="DCl-L7-9y4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -129,4 +136,7 @@
         <image name="Scissor" width="75" height="65"/>
         <image name="Stone" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DCl-L7-9y4"/>
+    </inferredMetricsTieBreakers>
 </document>
