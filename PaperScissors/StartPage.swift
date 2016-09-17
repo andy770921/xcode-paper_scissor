@@ -22,6 +22,15 @@ class StartPage: UIViewController {
         //paperB.addTarget(self, action: "WinLose", forControlEvents: UIControlEvents.TouchUpInside)
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    func rollValue() -> Int {
+        // Generate a random Int32 using arc4Random
+        let randomValue = 1 + arc4random() % 2
+        
+        // Return a more convenient Int, initialized with the random value
+        return Int(randomValue)
+    }
+    
     @IBAction func WinLose(){
     
     

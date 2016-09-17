@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Start Page-->
@@ -77,10 +78,44 @@
                     <view key="view" contentMode="scaleToFill" id="Bcx-0x-9M8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScPa" translatesAutoresizingMaskIntoConstraints="NO" id="qew-Y2-mVZ">
+                                <rect key="frame" x="87" y="137" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scissor vs Paper. YouWin!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvY-f4-586">
+                                <rect key="frame" x="109" y="357" width="197" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-ce-d5X">
+                                <rect key="frame" x="172" y="467" width="71" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="tryAgain:" destination="zXi-6Q-Y7U" eventType="touchUpInside" id="oVS-UR-rwx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FvY-f4-586" firstAttribute="centerY" secondItem="Bcx-0x-9M8" secondAttribute="centerY" id="E94-WS-6Gd"/>
+                            <constraint firstItem="fvd-gL-76Q" firstAttribute="top" secondItem="qew-Y2-mVZ" secondAttribute="bottom" constant="471" id="KVr-Mp-JPU"/>
+                            <constraint firstItem="qew-Y2-mVZ" firstAttribute="top" secondItem="UBK-Xi-ilU" secondAttribute="bottom" constant="117" id="Kbw-MC-Vf6"/>
+                            <constraint firstItem="qew-Y2-mVZ" firstAttribute="centerX" secondItem="Bcx-0x-9M8" secondAttribute="centerX" id="LCU-ud-cTd"/>
+                            <constraint firstItem="bVz-ce-d5X" firstAttribute="top" secondItem="FvY-f4-586" secondAttribute="bottom" constant="89" id="VoB-s1-LGZ"/>
+                            <constraint firstItem="FvY-f4-586" firstAttribute="centerX" secondItem="Bcx-0x-9M8" secondAttribute="centerX" id="eL3-7W-d0d"/>
+                            <constraint firstItem="qew-Y2-mVZ" firstAttribute="leading" secondItem="Bcx-0x-9M8" secondAttribute="leadingMargin" constant="67" id="hMe-qI-fxp"/>
+                            <constraint firstItem="bVz-ce-d5X" firstAttribute="centerX" secondItem="FvY-f4-586" secondAttribute="centerX" id="hZo-te-gbJ"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="WLText" destination="FvY-f4-586" id="zeP-j0-WaN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UsL-lP-IpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,6 +124,7 @@
     </scenes>
     <resources>
         <image name="Paper" width="75" height="65"/>
+        <image name="ScPa" width="800" height="600"/>
         <image name="Scissor" width="75" height="65"/>
         <image name="Stone" width="75" height="65"/>
     </resources>
