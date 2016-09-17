@@ -11,6 +11,7 @@ import UIKit
 class Outcome: UIViewController {
     
     var WLValue: Int?
+    @IBOutlet weak var ImageDisp: UIImageView!
     @IBOutlet weak var WLText: UILabel!
     
     @IBAction func tryAgain(sender: AnyObject) {
@@ -18,15 +19,29 @@ class Outcome: UIViewController {
         controller = self.storyboard?.instantiateViewControllerWithIdentifier("firstPage") as! StartPage
         self.presentViewController(controller, animated: true, completion: nil)
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewWillAppear(animated: Bool) {
+        if let WLValue2 = self.WLValue {
+            switch WLValue2 {
+                case 1:
+                    self.ImageDisp.image = UIImage(named: "StSc")
+                    self.WLText.text = "You Win"
+                case 2:
+                    self.ImageDisp.image = UIImage(named: "StPa")
+                    self.WLText.text = "You Lose"
+                default:
+                    self.ImageDisp.image = nil
+                    self.WLText.text = "Unknown"
+            }
+        } else {
+            self.ImageDisp.image = nil
+        }
+        
+        self.ImageDisp.alpha = 1
+
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
+
     
     
 }

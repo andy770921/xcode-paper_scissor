@@ -79,10 +79,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScPa" translatesAutoresizingMaskIntoConstraints="NO" id="qew-Y2-mVZ">
-                                <rect key="frame" x="87" y="137" width="240" height="128"/>
-                                <animations/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scissor vs Paper. YouWin!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvY-f4-586">
                                 <rect key="frame" x="109" y="357" width="197" height="21"/>
                                 <animations/>
@@ -98,6 +94,10 @@
                                     <action selector="tryAgain:" destination="zXi-6Q-Y7U" eventType="touchUpInside" id="oVS-UR-rwx"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScPa" translatesAutoresizingMaskIntoConstraints="NO" id="qew-Y2-mVZ">
+                                <rect key="frame" x="87" y="137" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -114,6 +114,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="ImageDisp" destination="qew-Y2-mVZ" id="JTm-cF-gLE"/>
                         <outlet property="WLText" destination="FvY-f4-586" id="zeP-j0-WaN"/>
                     </connections>
                 </viewController>
