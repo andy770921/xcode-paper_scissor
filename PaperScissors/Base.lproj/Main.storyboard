@@ -21,11 +21,9 @@
                                 <rect key="frame" x="170" y="227" width="75" height="65"/>
                                 <animations/>
                                 <state key="normal" image="Paper"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1J-CP-RgY">
-                                <rect key="frame" x="90" y="335" width="75" height="65"/>
-                                <animations/>
-                                <state key="normal" image="Stone"/>
+                                <connections>
+                                    <action selector="WinLose" destination="BYZ-38-t0r" eventType="touchUpInside" id="528-3x-kbr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJe-9N-9cG">
                                 <rect key="frame" x="246" y="335" width="75" height="65"/>
@@ -39,6 +37,11 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1J-CP-RgY">
+                                <rect key="frame" x="90" y="335" width="75" height="65"/>
+                                <animations/>
+                                <state key="normal" image="Stone"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -54,6 +57,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="paperB" destination="EOg-Nf-lpB" id="D9W-6I-BKU"/>
+                        <outlet property="scissorB" destination="nJe-9N-9cG" id="JDC-OR-A3L"/>
+                        <outlet property="stoneB" destination="s1J-CP-RgY" id="Hrn-9b-3c7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
