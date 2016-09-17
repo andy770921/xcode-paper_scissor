@@ -14,7 +14,9 @@ class Outcome: UIViewController {
     @IBOutlet weak var WLText: UILabel!
     
     @IBAction func tryAgain(sender: AnyObject) {
-        
+        var controller: StartPage
+        controller = self.storyboard?.instantiateViewControllerWithIdentifier("firstPage") as! StartPage
+        self.presentViewController(controller, animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
