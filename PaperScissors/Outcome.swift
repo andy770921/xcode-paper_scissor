@@ -23,11 +23,11 @@ class Outcome: UIViewController {
         if let WLValue2 = self.WLValue {
             switch WLValue2 {
                 case 1:
-                    self.ImageDisp.image = UIImage(named: "StSc")
-                    self.WLText.text = "You Win"
-                case 2:
                     self.ImageDisp.image = UIImage(named: "StPa")
-                    self.WLText.text = "You Lose"
+                    self.WLText.text = "Paper covers stone. You Win"
+                case 2:
+                    self.ImageDisp.image = UIImage(named: "ScPa")
+                    self.WLText.text = "Papar are cut by Scissor. You Lose"
                 default:
                     self.ImageDisp.image = nil
                     self.WLText.text = "Unknown"
