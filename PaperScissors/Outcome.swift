@@ -36,7 +36,7 @@ class Outcome: UIViewController {
             self.ImageDisp.image = nil
         }
         
-        self.ImageDisp.alpha = 1
+        //self.ImageDisp.alpha = 1
 
     }
     
